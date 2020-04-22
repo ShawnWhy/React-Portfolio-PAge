@@ -1,0 +1,76 @@
+img{
+    display:block;
+    max-width: 90%;
+    max-height:90%;
+    height:auto;
+    width:auto;
+    margin:auto;
+    position:relative;
+    border-radius: 10px;
+    top:4px;
+    
+
+
+    
+    
+}
+
+.profileImage{
+    top:4px;
+}
+
+.project1{
+
+    width:100px;
+    height:100px;
+    background-color:paleturquoise;
+    border-radius: 10px;
+    margin:5px
+}
+.project2{
+
+    width:100px;
+    height:100px;
+    background-color:plum;
+    border-radius: 10px;
+    margin:5px
+
+}
+
+.project3{
+
+    width:100px;
+    height:100px;
+    background-color:goldenrod;
+    border-radius: 10px;
+    margin:5px
+
+}
+
+.project4{
+
+    width:100px;
+    height:100px;
+    background-color:lightsalmon;
+    border-radius: 10px;
+    margin:5px
+
+}
+.sleep{
+
+    visibility: hidden;
+}
+
+.activate{
+    visibility: visible;
+    text-align:center;
+}
+.linkIcon{
+    height:20px;
+    width:auto;
+}
+
+.offseticon{
+    position:relative;
+    left:10%;
+}

@@ -1,0 +1,40 @@
+img{
+    display:block;
+    max-width: 90%;
+    max-height:90%;
+    height:auto;
+    width:auto;
+    margin:auto;
+    position:relative;
+    border-radius: 10px;
+    
+
+
+    
+    
+}
+
+.profileImage{
+    top:4px;
+}
+
+.redsquare{
+
+    width:100px;
+    height:100px;
+    background-color:paleturquoise;
+    border-radius: 10px;
+}
+
+.sleep{
+
+    visibility: hidden;
+}
+
+.activate{
+    visibility: visible;
+}
+.linkIcon{
+    height:20px;
+    width:auto;
+}
