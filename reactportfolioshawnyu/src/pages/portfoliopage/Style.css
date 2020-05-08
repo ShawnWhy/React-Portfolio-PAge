@@ -1,76 +1,149 @@
-img{
-    display:block;
-    max-width: 90%;
-    max-height:90%;
-    height:auto;
-    width:auto;
-    margin:auto;
-    position:relative;
-    border-radius: 10px;
-    top:4px;
-    
 
-
-    
-    
-}
 
 .profileImage{
     top:4px;
 }
-
-.project1{
-
-    width:100px;
-    height:100px;
-    background-color:paleturquoise;
+.rest{
+    height:80px;
+    width:80px;
     border-radius: 10px;
-    margin:5px
+    background-color:black;
+    margin:10px;
 }
-.project2{
-
-    width:100px;
-    height:100px;
-    background-color:plum;
-    border-radius: 10px;
-    margin:5px
-
-}
-
-.project3{
-
-    width:100px;
-    height:100px;
-    background-color:goldenrod;
-    border-radius: 10px;
-    margin:5px
-
-}
-
-.project4{
-
-    width:100px;
-    height:100px;
-    background-color:lightsalmon;
-    border-radius: 10px;
-    margin:5px
-
-}
-.sleep{
-
-    visibility: hidden;
-}
-
-.activate{
-    visibility: visible;
-    text-align:center;
-}
-.linkIcon{
-    height:20px;
-    width:auto;
-}
-
-.offseticon{
+.rest:hover{
+    
     position:relative;
-    left:10%;
+        bottom:5px;
+        right:5px;
+        background-color: black;
+
+        box-shadow:0 16px 16px rgba(0,0,0,0.12);
 }
+
+.deployed{
+    height:80px;
+    width:80px;
+    border-radius: 10px;
+    background-color:black;
+    position:relative;
+    left:20px;
+    margin:10px;
+
+
+}
+
+.imageInvisible{
+    visibility: collapse;
+ 
+
+}
+
+
+
+.imageone{
+    width:90%;
+    height:90%;
+    border-radius: 5px;
+    background-image: url("meshicon.png");
+    background-size: contain;
+    position:relative;
+    left:4px;
+    top:4px;
+
+
+
+
+}
+.imagetwo{
+    width:90%;
+    height:90%;
+    border-radius: 5px;
+    background-image: url("./moviemagic.png");
+    background-size: contain;
+    position:relative;
+    left:4px;
+    top:4px;
+
+
+}
+.imagethree{
+    width:90%;
+    height:90%;
+    border-radius: 5px;
+    background-image: url("./burger.png");
+    background-size: contain;
+    position:relative;
+    left:4px;
+    top:4px;
+
+
+
+}
+.imagefour{
+    width:90%;
+    height:90%;
+    border-radius: 5px;
+    background-image: url("./excerciseicon.png");
+    background-size: contain;
+    position:relative;
+    left:4px;
+    top:4px;
+
+
+
+
+}
+.descriptionInvisible{
+visibility: collapse;}
+
+@keyframes sborder {
+    0%{transform:translateX(-200px); 
+       
+    }
+
+    100% {transform:translateX(0px)
+           
+        }
+    
+
+
+
+}
+.descriptionVisible{
+    text-align:center; 
+     height:80px;
+            border-radius:5px;
+            border:1px solid black;
+            overflow:auto;  
+
+    animation:sborder .5s forwards;
+    transform-origin: left;
+    
+   
+    
+
+}
+.linkText:hover{
+    background-color:rgb(182, 182, 182);
+    border-radius: 3px;
+}
+.linkText{
+    color:black;
+    font-weight: bold;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+
+    
+}
+p{
+    text-align: center;
+    padding:5px;
+    margin:5px;
+}
+
+p::-webkit-scrollbar {
+    display: none;
+  }
+  

@@ -7,6 +7,8 @@ img{
     margin:auto;
     position:relative;
     border-radius: 10px;
+    display: inline-flex;
+    
     
 
 
@@ -14,16 +16,24 @@ img{
     
 }
 
+.linkpic{
+    height:50px;
+    width:50px;
+}
+
 .profileImage{
-    top:4px;
+    position:relative;
+    left:4px;
 }
 
 .redsquare{
 
     width:100px;
     height:100px;
-    background-color:paleturquoise;
     border-radius: 10px;
+    margin:10px;
+    position:relative;
+    left:10%;
 }
 
 .sleep{
@@ -34,7 +44,155 @@ img{
 .activate{
     visibility: visible;
 }
-.linkIcon{
-    height:20px;
-    width:auto;
+
+
+@keyframes jumpUp {
+    from {position:relative;
+        bottom:5px;
+        right:5px;
+        background-color: black;
+        box-shadow:0 16px 16px rgba(0,0,0,0.12);}
+    45% {position:relative;
+        bottom:5px;
+        right:5px;
+        background-color: black;
+        box-shadow:0 16px 16px rgba(0,0,0,0.12);}
+    50% {position:relative;
+        background-color: black;
+        bottom:0px;
+        box-shadow:white;}
+    100% {
+        background-color: black;}
+  }
+.jumpUp{
+    
+    animation: jumpUp 1s infinite;
+
+}
+.jumpUp:hover{
+    position:relative;
+        bottom:5px;
+        right:5px;
+        background-color: black;
+
+        box-shadow:0 16px 16px rgba(0,0,0,0.12);
+        animation:none
+}
+
+
+.rest{
+    position:relative;
+    background-color: black;
+    bottom:0px;
+    box-shadow:white;}
+@keyframes visibleFrame{
+    0% {width:30%;
+          height:60%}
+          
+   
+
+    100% {
+        width:80%;
+        height:60%
+    }
+}
+.visibleFrame{
+    /* position:absolute; */
+    border:1px solid black;
+    border-radius:10px;
+    animation:visibleFrame 1s forwards
+}
+.emptyframe{
+    visibility: hidden;
+}
+
+@keyframes bio{
+0%{width:10%;
+color:white;
+}
+90%{width:70%;
+    color:white}
+100%{width:70%;
+color:black}
+
+}
+
+.bio{
+    position:relative;
+    left:10%;
+    margin:10px;
+    animation:bio 1s forwards;
+    text-align:center;
+    padding:5px;
+}
+
+@keyframes bar{
+    from{width:30%;
+    height:1px;
+    background-color:black;
+    margin:auto
+
+}
+    to{width:90%;
+        height:1px;
+        background-color:black;
+        margin:auto
+}
+
+}
+.bar{
+    background-color:black;
+    animation:bar 1s forwards
+}
+
+.profileLinks{
+    clear:both;
+    width:100%;
+    text-align: center;
+    margin:10px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.profileContainer{
+    display:flex;
+}
+
+.skillIcon{
+    width:30px;
+    height:30px;
+}
+
+@keyframes visibleSkills{
+    from {transform:translateX(60%) }
+    to {transform: translatex(0%);}
+}
+
+.invisibleSkills{
+    visibility:collapse;
+}
+
+.invisibleDisplayDiv{
+    visibility:collapse;
+}
+.visibleSkills{
+    width:60%;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin:5px auto;
+    padding:2px;  
+    animation:visibleSkills 1s forwards;
+    transform-origin: right;
+   
+}
+
+.visibleDisplayDiv{
+    position: relative;
+    top:5%;
+    text-align:center;
+
+
 }

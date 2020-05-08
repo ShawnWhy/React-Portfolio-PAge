@@ -5,116 +5,101 @@ import burger from "./burger.png";
 import meshicon from "./meshicon.png";
 
 import "./Style.css"
-
-
+//makes the icon work
 const PortfolioPage = function(){
-    const [information1, setInformation1]=useState(
-        "invisible"
-    );
-    const [information2, setInformation2]=useState(
-        "invisible"
-    );
-    const [information3, setInformation3]=useState(
-        "invisible"
-    );
-    const [information4, setInformation4]=useState(
-        "invisible"
-    );
-    const [icon1, setIcon1]=useState(
-        "invisible"
-    );
-    const [icon2, setIcon2]=useState(
-        "invisible"
-    );
-    const [icon3, setIcon3]=useState(
-        "invisible"
-    );
-    const [icon4, setIcon4]=useState(
-        "invisible"
-    );
-    function showProject1(){
-        setIcon1("visible");
-        setInformation1("visible")
-        setIcon2("invisible");
-        setIcon3("invisible");
-        setIcon4("invisible");
-        setInformation2("invisible");
-        setInformation3("invisible");
-        setInformation4("invisible");
-    };
-    function showProject2(){
-    setIcon2("visible");
-    setInformation2("visible");
-    setIcon1("invisible");
-    setIcon3("invisible");
-    setIcon4("invisible");
-    setInformation1("invisible");
-    setInformation3("invisible");
-    setInformation4("invisible");
-    };
-    function showProject3(){
-    setIcon3("visible");
-    setInformation3("visible");;
-    setIcon1("invisible");
-    setIcon2("invisible");
-    setIcon4("invisible");
-    setInformation1("invisible");
-    setInformation2("invisible");
-    setInformation4("invisible");
-    };
+    const[iconAction, setIconAction]=useState(
+        {one:"rest",
+        two:"rest",
+        three:"rest",
+        four:"rest"
+
+    }
+    )
+    //make image background appear
+    const[imageState, setImageState]=useState(
+        {one:"imageInvisible",
+        two:"imageInvisible",
+        three:"imageInvisible",
+        four:"imageInvisible",}
+    )
+    // sets the description of the webpage and pops it ro the right
+    const[descriptionState, setDescriptionState]=useState(
+        {one:"descriptionInvisible",
+        two:"descriptionInvisible",
+        three:"descriptionInvisible",
+        four:"descriptionInvisible",}
+    )
+    const handleClick = function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        var name=event.target.getAttribute("name");
+        console.log(name);
+        setIconAction({...iconAction,one:"rest",two:"rest",three:"rest",four:"rest", [name]:"deployed"}
+
         
+        );
+        setImageState({...imageState,one:"imageInvisible",two:"imageInvisible",three:"imageInvisible",four:"imageInvisible ",[name]:"image"+name})
+
+        setTimeout(()=>{
+            setDescriptionState({...descriptionState,one:"descriptionInvisible",two:"descriptionInvisible",three:"descriptionInvisible",four:"descriptionInvisible", [name]:"descriptionVisible"})
+        },100)
+
+        
+    }
+//     useEffect(
+//         function(){
+        
+            
+//         setTimeout(() => {
+//             setIconAction({...iconAction, one:"jumpUp"})
+//       },0)
+//       setTimeout(() => {
+//           setIconAction({...iconAction, one:"jumpUp",two:"jumpUp"})
+//     },100)
+//     setTimeout(() => {
+//       setIconAction({...iconAction, one:"jumpUp",two:"jumpUp",three:"jumpUp"})
+// },150)
+// setTimeout(() => {
+//   setIconAction({...iconAction, one:"jumpUp",two:"jumpUp",three:"jumpUp",four:"jumpUp"})
+// },200)
+        
+        
+//    } ,[]
+//     )
     
-    function showProject4(){
-        setIcon4("visible");
-        setInformation4("visible");;
-        setIcon1("invisible");
-        setIcon2("invisible");
-        setIcon3("invisible");
-        setInformation1("invisible");
-        setInformation2("invisible");
-        setInformation3("invisible");
-      
-    };
+
 return(
     <div>
-        <div className={(icon1==="invisible" ? "" : "offseticon") + " row"}>
-        <div className="project1" onClick={showProject1}>
-        <img src={moviemagic} alt="movie magic icon "className ={(icon1==="invisible"? "sleep":"activate")}></img>
+        <div className="row offset-md-1">
+        <div name="one" className={iconAction.one } onClick={handleClick}>
+            <div className={imageState.one}></div>
         </div>
-        <div className={"offset-md-1 "+(information1==="invisible"? "sleep":"activate")}>
-            <a href="https://movie-magic-bootcamp2019newest.herokuapp.com/"><h3>Movie Magic</h3></a>
-            <p>a website to search for movie recommendations and other users with same movie interests</p>
+        <div className={descriptionState.one + " offset-md-2 "}><a href="https://howarddaniels.github.io/the-daily-mesh/news.html"><p className="linkText">The Mesh</p></a>a website featuring news, stocks and weatherupdates, created with axios and moments.js</div>
         </div>
+
+        <div className="row offset-md-1">
+        <div name="two" className={iconAction.two} onClick={handleClick}>
+        <div className={imageState.two}></div>
         </div>
-        <div className={(icon2==="invisible" ? "" : "offseticon") + " row"}>
-        <div className="project2" onClick={showProject2}>
-        <img src={burger} alt= "burgericon" className ={(icon2==="invisible"? "sleep":"activate")}></img>
+        <div className={descriptionState.two+ " offset-md-2 "}><a href="https://infinite-inlet-20359.herokuapp.com"><p className="linkText">MovieMagic</p></a>an App that finds movie-viewing buddies and suggest movies to a user; created with MySql, passport, and axios</ div>
         </div>
-        <div className={"offset-md-1 "+(information2==="invisible"? "sleep":"activate")}>
-            <a href="https://viscount-of-sandwich.herokuapp.com/"><h3>Burger Logger</h3></a>
-            <p>a Fun way to Make a Sandwich using Handlebars and Mysql</p>
+        <div className="row offset-md-1">
+        <div name="three" className={iconAction.three} onClick={handleClick}>
+        <div className={imageState.three}></div>
         </div>
+        <p className={descriptionState.three+ " offset-md-2 "}><a href="https://viscount-of-sandwich.herokuapp.com/"><p className="linkText">Viscount of Sandwich</p></a>a sandwich creation app made with MySql and  Handlebars</p>
         </div>
-        <div className={(icon3==="invisible" ? "" : "offseticon") + " row"}>
-        <div className="project3" onClick={showProject3}>
-        <img src={meshicon} alt= "meshicon" className ={(icon3==="invisible"? "sleep":"activate")}></img>
+        <div className="row offset-md-1">
+        <div name="four" className={iconAction.four} onClick={handleClick}>
+        <div className={imageState.four}></div>
         </div>
-        <div className={"offset-md-1 "+(information3==="invisible"? "sleep":"activate")}>
-            <a href="https://howarddaniels.github.io/the-daily-mesh/news.html"><h3>The Daily MESH</h3></a>
-            <p>a website featuring news, stocks and weatherupdates</p>
+        <p className={descriptionState.four+ " offset-md-2 "}><a href="https://shawnfitnesstracker.herokuapp.com/"><p className="linkText">Fitness tracker</p></a>an app that loggs excercise for the user; created with Mongoose</p>
         </div>
-        </div>
-        <div className={(icon4==="invisible" ? "" : "offseticon") + " row"}>
-        <div className="project4" onClick={showProject4}>
-        <img src={weathericon} alt= "weatherIcon" className ={(icon4==="invisible"? "sleep":"activate")}></img>
-        </div>
-        <div className={"offset-md-1 "+(information4==="invisible"? "sleep":"activate")}>
-            <a href="https://shawnwhy.github.io/WeatherDash/"><h3>Weather Tracker</h3></a>
-            <p>Find out about weather in Different Cities</p>
-        </div>
-        </div>
-       
-       
+        
+        
+
+
+
 
 
     </div>

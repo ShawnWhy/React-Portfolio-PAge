@@ -1,13 +1,66 @@
 import React, { useEffect, useState } from "react";
-import Gitlogo from "./Gitlogo.png";
+import Gitlogo from "./SVG/github.svg";
 import selfportrait from "./selfportrait.jpg";
-import CVlogo from "./CVlogo.png";
-import linkednlogo from "./linkednlogo.png";
-
+import CVlogo from "./SVG/resume.svg"
+import linkednlogo from "./SVG/linkedin.svg"
+import handlebarIcon from "./SVG/handlebars.svg";
+import expressIcon from "./SVG/express.svg";
+import html6Icon from "./SVG/html6.svg";
+import javascriptIcon from "./SVG/javascript.svg";
+import mongodbIcon from "./SVG/mongodb.svg";
+import nodeJsBlackIcon from "./SVG/nodejsblack.svg";
+import reactIcon from "./SVG/react.svg";
 import "./Style.css"
 
 const HomePage =()=>{
+const [display, SetDisplay]=useState(
+    ""
+)
+const [displayDiv, setDisplayDiv]=useState(
+    "invisibleDisplayDiv"
+    
 
+) 
+const [skillsContainer, setSkillsContainer]=useState(
+    "invisibleSkills"
+)
+const skillsArray = [
+    {name:"React",
+    icon :reactIcon},
+    {name:"Express",
+    icon:expressIcon},
+    {name:"Javascript",
+    icon:javascriptIcon},
+    {name:"mongoDB",
+    icon:mongodbIcon},
+    {name:"NodeJs",
+    icon:nodeJsBlackIcon},
+    {name:"HandleBars",
+    icon:handlebarIcon},
+
+]
+const[jumpingSquare, setJumpingSquare]=useState(
+    "jumpUp"
+)
+const[frame, setFrame]=useState(
+    "emptyFrame"
+)
+const[bar, setBar]=useState(
+    {
+    one:"invisible",
+    two:"invisible"
+    }
+)
+
+const[blackIcon, setBlackIcon]=useState(
+    {one:"blackIcon",
+    two:"blackIcon",
+    three:"blackIcon"
+
+    }
+)
+
+    
 
 const[imageDisplay, setimageDisplay]=useState(
     "invisible"
@@ -15,63 +68,113 @@ const[imageDisplay, setimageDisplay]=useState(
 )
 const[informationDisplay, setInformationDisplay]=useState(
     "invisible"
+
 )
-const[linksDisplay1, setLinkDisplay1]=useState(
-    "invisible"
+
+const[linkDisplay, setLinkDisplay]=useState(
+    { one:"invisible",
+    two: "invisible",
+    three: "invisible",
+    
+    }
 )
-const[linksDisplay2, setLinkDisplay2]=useState(
-    "invisible"
-)
-const[linksDisplay3, setLinkDisplay3]=useState(
-    "invisible"
-)
+
+const handleHover=function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    var targetName = event.target.getAttribute("name");
+    
+    
+    SetDisplay(targetName)
+    setTimeout(() => {
+        SetDisplay("")
+        
+    }, 500);
+}
 
 
 function activateInfo(){
+    setJumpingSquare("rest");
+    setFrame("visibleFrame")
 
         setimageDisplay("Visible");
+        setTimeout(() => {
+            setBar({...bar, one:"bar"})
+            
+        }, 1200);
         setTimeout(() => {
          setInformationDisplay("Visible")  
             }, 400);
         setTimeout(() => {
-            setLinkDisplay1("visible")
-        }, 800);
+            setLinkDisplay({...linkDisplay, one:"Visible"})  
+        }, 1400);
         setTimeout(()=>{
-        setLinkDisplay2("visible")
-        }, 1200);
+        setLinkDisplay({...linkDisplay,one:"Visible", two:"Visible"})  
+        }, 1800);
         setTimeout(()=>{
-            setLinkDisplay3("visible")
-            }, 1600)
+            setLinkDisplay({...linkDisplay,one:"Visible", two:"Visible", three:"Visible"})  
+            }, 2000)
+            setTimeout(() => {
+                setBar({...bar, one:"bar",two:"bar"})
+            },1200)
+            setTimeout(() => {
+                setSkillsContainer(
+                    "visibleSkills")
+                
+            }, 2200);
+           
+            setDisplayDiv(
+                "visibleDisplayDiv"
+            )
+            
+        
 
     
 } 
 
   return (
-  <div>
-      <div className="row">
-      <div className= "offset-md-3 redsquare"  onClick={activateInfo}>
+  
+      <div >
+          <div className="profileContainer">
+      <div className= {" redsquare "+ jumpingSquare} onClick={activateInfo}>
       <img className = {"profileImage "+(imageDisplay==="invisible"? 'sleep':'activate' )}src={selfportrait} alt="portrait"></img>
           </div>
-          <div className = {"information profileInformation " + (informationDisplay==="invisible"?"sleep":"activate" )}>
-          <p>Shawn Yu is a full-stack developer from teh east coast of the united States, he like to read and listen to  audiobooks</p>
+          <div className = {(informationDisplay==="invisible"?"sleep ":"activate bio "+frame )}>
+          <p>Shawn Yu is a full-stack developer from the east coast of the united States, he is a former commercial artist and university art teacher; he likes to read and listen to  audiobooks</p>
           </div>
-          <div className= "profileLinks" >
-              <div className ={"linkIcon "+(linksDisplay1==="invisible"?"sleep":"activate")}>
-              <a href="https://github.com/ShawnWhy/VicountofSandwich/archive/master.zip" download><img src={CVlogo}></img></a>
+          </div>
+          <div className={bar.one}></div>
+          <div className="profileLinks row" >
+              
+              
+              <div  className={"linkpic "+(linkDisplay.one==="invisible"? "sleep":"activate")}>
+              <a href="https://github.com/ShawnWhy/VicountofSandwich/archive/master.zip" download><img name="download resume" src={CVlogo} onMouseOver={handleHover}></img></a>
 
               </div>
-              <div className ={"linkIcon "+(linksDisplay2==="invisible"?"sleep":"activate")}>
-              <a href="https://github.com/ShawnWhy" ><img src={Gitlogo} alt="git logo"></img></a>
+              <div className={"linkpic "+(linkDisplay.two==="invisible"? "sleep":"activate")}   >
+              <a href="https://github.com/ShawnWhy" ><img name="github account"  src={Gitlogo} alt="git logo" onMouseOver={handleHover}></img></a>
                 </div>
-              <div className ={"linkIcon "+(linksDisplay3==="invisible"?"sleep":"activate")}>
-              <a href="https://www.linkedin.com/in/shawn-yu-4377b411/"><img src={linkednlogo} alt={"linkedin logo"}></img></a>
+              <div className={"linkpic "+(linkDisplay.three==="invisible"? "sleep":"activate")} onMouseOver={handleHover}>
+              <a href="https://www.linkedin.com/in/shawn-yu-4377b411/"><img   name="linkedin account"  src={linkednlogo} alt={"linkedin logo"} onMouseOver={handleHover}></img></a>
 
               </div>
+            </div>
+            <div className={bar.two}></div>
+            <div className={skillsContainer}>
+                <div>skills:</div>
+            {skillsArray.map(skill => {
+               return (
+                 <div key={skill.name}className="skillIcon"><img  name= {skill.name}  src={skill.icon} onMouseOver={handleHover}></img></div>
+               );
+             })}
+            </div>
+            <div className={ displayDiv}>{display}</div>
+            <div className="footer"></div>
 
-
-          </div>
+          
      </div>
-     </div>
+  
+     
 
 
   

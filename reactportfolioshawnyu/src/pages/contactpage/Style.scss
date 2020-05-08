@@ -1,0 +1,16 @@
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+input{
+    border-radius:5px;
+    float:left;
+
+}
+
+@keyframes fromRight{
+    from{transform:translateX(80%)
+    to{transform:translateX(0%)}}
+}

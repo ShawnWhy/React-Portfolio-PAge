@@ -1,0 +1,58 @@
+
+.container{
+    display:flex;
+    justify-content:center;
+    margin:1px auto;
+
+}
+form{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    /* align-items: center; */
+
+
+}
+
+input{
+    border-radius:5px;
+    clear: both;
+    float:left;
+    margin:2px;
+    animation:fromRight .5s forwards;
+    transform-origin: right;
+    text-align:center
+}
+.nameInput{
+    animation:fromLeft .5s forwards;
+    transform-origin: left;
+
+
+}
+
+
+
+textarea{
+    border-radius:5px;
+    clear: both;
+    float:left;
+    margin:2px;
+    animation:fromLeft .5s forwards;
+    transform-origin: left;
+    text-align:center;
+
+
+}
+
+@keyframes fromRight{
+    from{transform:translateX(80%)}
+    to{transform:translateX(0%)}
+}
+@keyframes fromLeft{
+    from{transform:translateX(-80%)}
+    to{transform:translateX(0%)}
+}
+
+.alert{
+    text-align:center
+}

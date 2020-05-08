@@ -36,3 +36,76 @@
     transform: rotate(360deg);
   }
 }
+
+
+a:link {
+  color:white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color:white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.jumbotron{
+  background-color:black
+}
+
+.btn{
+
+  box-shadow: none;
+  outline:none;
+  border:none;
+}
+
+.dropdown-toggle:focus{
+  box-shadow: none;
+  outline:none;
+  border:none; 
+
+
+}
+.dropdown-toggle{
+  box-shadow: none;
+  outline:none;
+  border:none;
+
+}
+.btn-white{
+  box-shadow: none;
+  outline:none;
+  border:none;
+
+}
+.btn-black{
+  box-shadow: none;
+  outline:none;
+  border:none;
+  background-color: black;
+
+}
+
+.btn:hover{
+  background-color:black;
+  outline:none;
+  border:none;
+}
+.invisible{
+  color:black;
+
+}
+.visible{
+  color:white
+}
+
+.footer{
+  background-color: black;
+  position:fixed;
+  bottom:0px;
+  color:grey;
+  width:100%;
+  text-align:center;
+
+}
