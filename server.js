@@ -4,7 +4,6 @@ const routes = require("./api");
 const app = express();
 const PORT = process.env.PORT || 3001;
 const path = require("path");
-const build = require("../reactportfolioshawnyu/build")
 
 
 app.use(express.urlencoded({ extended: true }));
