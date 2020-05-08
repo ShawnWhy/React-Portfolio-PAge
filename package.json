@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "WOO",
+  "main": "server.js",
+  "scripts": {
+    "build": "cd reactportfolioshawnyu && npm run build ",
+    "install-client": "cd reactportfolioshawnyu && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.12",
+    "passport": "^0.4.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShawnWhy/React-Portfolio-PAge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShawnWhy/React-Portfolio-PAge/issues"
+  },
+  "homepage": "https://github.com/ShawnWhy/React-Portfolio-PAge#readme"
+}
