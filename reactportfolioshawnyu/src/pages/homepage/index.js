@@ -11,6 +11,7 @@ import mongodbIcon from "./SVG/mongodb.svg";
 import nodeJsBlackIcon from "./SVG/nodejsblack.svg";
 import reactIcon from "./SVG/react.svg";
 import "./Style.css"
+import resume from "./resume.pdf"
 
 const HomePage =()=>{
 const [display, SetDisplay]=useState(
@@ -124,7 +125,7 @@ function activateInfo(){
             }, 2200);
            
             setDisplayDiv(
-                "visibleDisplayDiv"
+                " yDiv"
             )
             
         
@@ -148,7 +149,7 @@ function activateInfo(){
               
               
               <div  className={"linkpic "+(linkDisplay.one==="invisible"? "sleep":"activate")}>
-              <a href="https://github.com/ShawnWhy/VicountofSandwich/archive/master.zip" download><img name="download resume" src={CVlogo} onMouseOver={handleHover}></img></a>
+              <a href={resume} download><img name="download resume" src={CVlogo} onMouseOver={handleHover}></img></a>
 
               </div>
               <div className={"linkpic "+(linkDisplay.two==="invisible"? "sleep":"activate")}   >

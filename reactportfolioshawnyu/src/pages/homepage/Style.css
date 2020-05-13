@@ -5,7 +5,6 @@ img{
     height:auto;
     width:auto;
     margin:auto;
-    position:relative;
     border-radius: 10px;
     display: inline-flex;
     
@@ -195,4 +194,45 @@ color:black}
     text-align:center;
 
 
+}
+
+@media only screen and (max-width: 480px){
+
+    .redsquare{width:50px;
+    height: 50px;
+align-self: center;
+margin:2px;}
+    .bio{
+        position:relative;
+        margin:4px;
+        align-self: center;
+    }
+    .profileContainer{
+        display:inline;
+        justify-content: center;
+    }
+    .rest{
+        position: relative;
+        transform: translate(180%);
+        transition-duration: .5s;
+
+
+    }
+    .linkpic{
+        height:30px;
+        width:30px;
+    }
+    .visibleDisplayDiv{
+        position: relative;
+        top:2%;
+        text-align:center;
+    
+    
+    }
+    .profileImage{
+        position:relative;
+        left:2.5px;
+        bottom:8px;
+        align-self:center
+    }
 }

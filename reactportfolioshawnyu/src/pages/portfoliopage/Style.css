@@ -1,5 +1,9 @@
 
-
+.rowContainer{
+    display: flex;
+    flex-direction: row;
+ 
+}
 .profileImage{
     top:4px;
 }
@@ -34,6 +38,7 @@
 
 .imageInvisible{
     visibility: collapse;
+    
  
 
 }
@@ -94,7 +99,9 @@
 
 }
 .descriptionInvisible{
-visibility: collapse;}
+visibility:collapse;
+
+}
 
 @keyframes sborder {
     0%{transform:translateX(-200px); 
@@ -110,7 +117,11 @@ visibility: collapse;}
 
 }
 .descriptionVisible{
-    text-align:center; 
+    text-align:center;
+    padding:2px; 
+    position: relative;
+    left:10%;
+
      height:80px;
             border-radius:5px;
             border:1px solid black;
@@ -147,3 +158,85 @@ p::-webkit-scrollbar {
     display: none;
   }
   
+  @media only screen and (max-width: 480px){
+    .rowContainer{float:left;margin:2px;
+        align-self: center;
+    }
+  
+    .deployed{
+        height:50px;
+        width:50px;
+        border-radius: 5px;
+        background-color:black;
+        position:relative;
+        top:20px;
+        left:40px;
+        margin:10px;
+        z-index: -1 ;
+
+    
+    
+    }
+    .rest{
+        height:50px;
+        width:50px;
+        border-radius: 5px;
+        background-color:black;
+        position:relative;
+        right:60px;
+        margin:10px;
+    }
+    .imageone{
+        position:relative;
+    left:2px;
+    top:2px;
+    }
+    .imagetwo{
+        position:relative;
+    left:2px;
+    top:2px;
+    }
+    .imagethree{
+        position:relative;
+    left:2px;
+    top:2px;
+    }
+    .imagefour{
+        position:relative;
+    left:2px;
+    top:2px;
+    }
+    .descriptionInvisible{
+        visibility:collapse;
+        position:absolute;
+        
+        }
+    .descriptionVisible{
+        text-align:center;
+        font-size: small;
+        padding:2px; 
+        position:absolute;
+        top:50%;
+        left:0%;
+        
+    
+         height:80px;
+         width:95%;
+         align-self: center;
+                border-radius:3px;
+                border:1px solid black;
+                overflow:auto;  
+    
+        animation:sborder .5s forwards;
+        transform-origin: left;
+        
+    }
+    /* .totalContainer{
+        display: inline;
+        align-content: center;
+    } */
+    
+ 
+
+
+  }

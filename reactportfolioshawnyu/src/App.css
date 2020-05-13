@@ -109,3 +109,56 @@ a:visited {
   text-align:center;
 
 }
+.long{
+  height:100%;
+  widows: 100%;
+  background-color:black;
+}
+.drop{
+  position:relative;
+  left:0%;
+  align-content: center;
+  
+
+
+}
+.white{
+  background-color:white;
+  width:30px;
+  height:30px;
+  border-radius:5px;
+}
+.black{
+  background-color: black;
+  width:30px;
+  height:30px;
+  border-radius:5px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 1px auto;
+  position:relative;
+  left:35%;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+@media only screen and (max-width:480 px){
+
+  .dropdown-toggle{
+      width:300px
+
+  }
+  .btn{
+    width:20px;
+  }
+
+}

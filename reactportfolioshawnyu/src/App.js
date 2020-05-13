@@ -35,9 +35,10 @@ function App() {
     <Router>
       <div>
       <div className = "jumbotron">
-      <button className={"btn btn-"+dropDowncolor +" dropdown-toggle"} onClick={seeLinks} type="button" aria-expanded="false">
+      <div className={"drop " + dropDowncolor} onClick={seeLinks}>
+        <div className="arrow down"></div>
     
-    </button>
+    </div>
     <div className={"SelectionButton "+ button.one}>
       <a href="/">About</a></div>
       <div className={"SelectionButton "+button.two}>
@@ -58,8 +59,8 @@ function App() {
          </Route> 
           
         </Switch>
-        <div className="footer">all rights reserved 2020</div>
-
+        <div className="footer">@ 2020 copyright: Shawn Yu</div>
+      
       </div>
      </Router>
 

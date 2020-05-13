@@ -19,8 +19,7 @@ useNewUrlParser: true,useUnifiedTopology: true},);
 
 
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("reactportfolioshawnyu/build"));
+//    app.use(express.static("reactportfolioshawnyu/build"));
 
 
 //   app.use(express.static("build"));
@@ -30,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
        res.sendFile(path.join(__dirname,  "reactportfolioshawnyu/build", "index.html"));
    });
 
- }
+//  }
 
 
 //  app.get("/", (req, res) => {

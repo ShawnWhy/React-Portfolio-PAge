@@ -69,31 +69,31 @@ const PortfolioPage = function(){
     
 
 return(
-    <div>
-        <div className="row offset-md-1">
+    <div className="totalContainer">
+        <div className="rowContainer">
         <div name="one" className={iconAction.one } onClick={handleClick}>
             <div className={imageState.one}></div>
         </div>
-        <div className={descriptionState.one + " offset-md-2 "}><a href="https://howarddaniels.github.io/the-daily-mesh/news.html"><p className="linkText">The Mesh</p></a>a website featuring news, stocks and weatherupdates, created with axios and moments.js</div>
+        <div className={ descriptionState.one }><a href="https://howarddaniels.github.io/the-daily-mesh/news.html"><p className="linkText">The Mesh</p></a>a website featuring news, stocks and weatherupdates, created with axios and moments.js</div>
         </div>
 
-        <div className="row offset-md-1">
+        <div className="rowContainer">
         <div name="two" className={iconAction.two} onClick={handleClick}>
         <div className={imageState.two}></div>
         </div>
-        <div className={descriptionState.two+ " offset-md-2 "}><a href="https://infinite-inlet-20359.herokuapp.com"><p className="linkText">MovieMagic</p></a>an App that finds movie-viewing buddies and suggest movies to a user; created with MySql, passport, and axios</ div>
+        <div className={ descriptionState.two}><a href="https://infinite-inlet-20359.herokuapp.com"><p className="linkText">MovieMagic</p></a>an App that finds movie-viewing buddies and suggest movies to a user; created with MySql, passport, and axios</ div>
         </div>
-        <div className="row offset-md-1">
+        <div className="rowContainer">
         <div name="three" className={iconAction.three} onClick={handleClick}>
         <div className={imageState.three}></div>
         </div>
-        <p className={descriptionState.three+ " offset-md-2 "}><a href="https://viscount-of-sandwich.herokuapp.com/"><p className="linkText">Viscount of Sandwich</p></a>a sandwich creation app made with MySql and  Handlebars</p>
+        <p className={ descriptionState.three}><a href="https://viscount-of-sandwich.herokuapp.com/"><p className="linkText">Viscount of Sandwich</p></a>a sandwich creation app made with MySql and  Handlebars</p>
         </div>
-        <div className="row offset-md-1">
+        <div className="rowContainer">
         <div name="four" className={iconAction.four} onClick={handleClick}>
         <div className={imageState.four}></div>
         </div>
-        <p className={descriptionState.four+ " offset-md-2 "}><a href="https://shawnfitnesstracker.herokuapp.com/"><p className="linkText">Fitness tracker</p></a>an app that loggs excercise for the user; created with Mongoose</p>
+        <p className={ descriptionState.four}><a href="https://shawnfitnesstracker.herokuapp.com/"><p className="linkText">Fitness tracker</p></a>an app that loggs excercise for the user; created with Mongoose</p>
         </div>
         
         
