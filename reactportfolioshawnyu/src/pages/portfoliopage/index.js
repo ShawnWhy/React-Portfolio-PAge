@@ -94,7 +94,7 @@ return(
         <div name="four" className={iconAction.four} onClick={handleClick}>
         <div className={imageState.four}></div>
         </div>
-        <p className={ descriptionState.four}><a href="https://shawnyulingolabsmaster.herokuapp.com/"><p className="linkText">Lingo Labs</p></a>a full MERN designed to let customers purchase and download custom websites</p>
+        <p className={ descriptionState.four}><a href="https://shawnyulingolabsmaster.herokuapp.com/"><p className="linkText">Lingo Labs</p></a>a full MERN web application designed to let customers purchase and download custom websites</p>
         </div>
         
         
