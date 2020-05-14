@@ -3,6 +3,7 @@ import weathericon from "./weathericon.png";
 import moviemagic from "./moviemagic.png";
 import burger from "./burger.png";
 import meshicon from "./meshicon.png";
+import lingoicon from "./lingolabslogo.PNG"
 
 import "./Style.css"
 //makes the icon work
@@ -93,7 +94,7 @@ return(
         <div name="four" className={iconAction.four} onClick={handleClick}>
         <div className={imageState.four}></div>
         </div>
-        <p className={ descriptionState.four}><a href="https://shawnfitnesstracker.herokuapp.com/"><p className="linkText">Fitness tracker</p></a>an app that loggs excercise for the user; created with Mongoose</p>
+        <p className={ descriptionState.four}><a href="https://shawnyulingolabsmaster.herokuapp.com/"><p className="linkText">Fitness tracker</p></a>an app that loggs excercise for the user; created with Mongoose</p>
         </div>
         
         
