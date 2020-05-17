@@ -162,7 +162,7 @@ function activateInfo(){
             </div>
             <div className={bar.two}></div>
             <div className={skillsContainer}>
-                <div>skills: </div>
+                <div>{"skills: "}</div>
             {skillsArray.map(skill => {
                return (
                  <div key={skill.name}className="skillIcon"><img  name= {skill.name}  src={skill.icon} onMouseOver={handleHover}></img></div>
