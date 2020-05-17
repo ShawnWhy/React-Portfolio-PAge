@@ -125,7 +125,7 @@ function activateInfo(){
             }, 2200);
            
             setDisplayDiv(
-                " yDiv"
+                "visibleDisplayDiv"
             )
             
         
