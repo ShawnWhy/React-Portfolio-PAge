@@ -134,6 +134,9 @@ visibility:collapse;
     
 
 }
+div::-webkit-scrollbar {
+    display: none;
+  }
 .linkText:hover{
     background-color:rgb(182, 182, 182);
     border-radius: 3px;
@@ -141,6 +144,7 @@ visibility:collapse;
 .linkText{
     color:black;
     font-weight: bold;
+    margin:1px;
 }
 .row{
     display:flex;
@@ -150,15 +154,34 @@ visibility:collapse;
 }
 p{
     text-align: center;
-    padding:5px;
-    margin:5px;
+    position:relative;
+    bottom:5px;
+    /* padding:1px;
+    margin-top:1px; */
 }
 
 p::-webkit-scrollbar {
     display: none;
   }
+
+.githubLink{
+align-self: center;
+color:black;
+font-size:small;
+margin:1px;
+position:relative;
+bottom:5px;
+width:30%;
+margin:auto;
+}
   
+.githubLink:hover{
+    background-color:rgb(182, 182, 182);
+    border-radius: 3px;
+}
   @media only screen and (max-width: 480px){
+
+    
     .rowContainer{float:left;margin:2px;
         align-self: center;
     }
@@ -214,13 +237,12 @@ p::-webkit-scrollbar {
     .descriptionVisible{
         text-align:center;
         font-size: small;
-        padding:2px; 
         position:absolute;
         top:50%;
-        left:0%;
+        left:2.5%;
         
     
-         height:80px;
+         height:100px;
          width:95%;
          align-self: center;
                 border-radius:3px;

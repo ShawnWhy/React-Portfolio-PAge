@@ -1,3 +1,13 @@
+
+.linkpic{
+    height:50px;
+    width:50px;
+}
+
+.profileImage{
+    position:relative;
+}
+
 img{
     display:block;
     max-width: 90%;
@@ -8,22 +18,12 @@ img{
     border-radius: 10px;
     display: inline-flex;
     
-    
-
-
-    
-    
 }
-
-.linkpic{
-    height:50px;
-    width:50px;
-}
-
-.profileImage{
+p{
     position:relative;
-    left:4px;
+    top:3%;
 }
+
 
 .redsquare{
 
@@ -33,6 +33,10 @@ img{
     margin:10px;
     position:relative;
     left:10%;
+    text-align:center;
+    display:inline-block;
+    vertical-align: middle;
+    
 }
 
 .sleep{
@@ -196,7 +200,35 @@ color:black}
 
 }
 
+@keyframes Xappear{
+    0%{color:black;}
+    50%{color:black;}
+    60%{color:white}
+    90%{color:white;}
+    100%{color:white}
+}   
+
+.Xappear{
+    text-align:center;
+    font-weight: bold;
+    animation:Xappear 1s infinite;
+    position:relative;
+    top:30%;
+    font-size: xx-large;
+
+
+}
+
+.Xdissapear{
+    visibility: collapse;
+height:0px;
+width:0px;
+margin:0px;
+padding:0px;}
+
 @media only screen and (max-width: 480px){
+
+  
 
     .redsquare{width:50px;
     height: 50px;
@@ -231,8 +263,20 @@ margin:2px;}
     }
     .profileImage{
         position:relative;
-        left:2.5px;
-        bottom:8px;
+        /* left:-5%; */
+        bottom:4px;
         align-self:center
+    }
+    .Xappear{
+        text-align:center;
+        font-weight: bold;
+        animation:Xappear 1s infinite;
+        position: relative;
+        top:10%;
+    
+    
+    }
+    p{
+        margin-right:5px;
     }
 }

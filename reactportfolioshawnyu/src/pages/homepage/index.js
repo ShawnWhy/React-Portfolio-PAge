@@ -137,7 +137,7 @@ function activateInfo(){
   
       <div >
           <div className="profileContainer">
-      <div className= {" redsquare "+ jumpingSquare} onClick={activateInfo}>
+      <div className= {" redsquare "+ jumpingSquare} onClick={activateInfo}><h2 className={(imageDisplay==="invisible"?"Xappear":"Xdissapear")}>X</h2>
       <img className = {"profileImage "+(imageDisplay==="invisible"? 'sleep':'activate' )}src={selfportrait} alt="portrait"></img>
           </div>
           <div className = {(informationDisplay==="invisible"?"sleep ":"activate bio "+frame )}>
@@ -162,7 +162,7 @@ function activateInfo(){
             </div>
             <div className={bar.two}></div>
             <div className={skillsContainer}>
-                <div>{"skills: "}</div>
+                <div><p>{"skills: "}</p></div>
             {skillsArray.map(skill => {
                return (
                  <div key={skill.name}className="skillIcon"><img  name= {skill.name}  src={skill.icon} onMouseOver={handleHover}></img></div>
