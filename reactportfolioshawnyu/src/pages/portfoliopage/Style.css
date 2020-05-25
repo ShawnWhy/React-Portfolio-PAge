@@ -2,8 +2,7 @@
 .rowContainer{
     display: flex;
     flex-direction: row;
- 
-}
+ }
 .profileImage{
     top:4px;
 }
@@ -13,16 +12,14 @@
     border-radius: 10px;
     background-color:black;
     margin:10px;
-}
+    }
 .rest:hover{
-    
     position:relative;
         bottom:5px;
         right:5px;
         background-color: black;
-
         box-shadow:0 16px 16px rgba(0,0,0,0.12);
-}
+    }
 
 .deployed{
     height:80px;
@@ -32,19 +29,11 @@
     position:relative;
     left:20px;
     margin:10px;
-
-
-}
+    }
 
 .imageInvisible{
     visibility: collapse;
-    
- 
-
-}
-
-
-
+    }
 .imageone{
     width:90%;
     height:90%;
@@ -54,11 +43,7 @@
     position:relative;
     left:4px;
     top:4px;
-
-
-
-
-}
+    }
 .imagetwo{
     width:90%;
     height:90%;
@@ -68,9 +53,7 @@
     position:relative;
     left:4px;
     top:4px;
-
-
-}
+    }
 .imagethree{
     width:90%;
     height:90%;
@@ -80,10 +63,7 @@
     position:relative;
     left:4px;
     top:4px;
-
-
-
-}
+    }
 .imagefour{
     width:90%;
     height:90%;
@@ -93,77 +73,54 @@
     position:relative;
     left:4px;
     top:4px;
-
-
-
-
-}
+    }
 .descriptionInvisible{
-visibility:collapse;
-
-}
+    visibility:collapse;
+    }
 
 @keyframes sborder {
     0%{transform:translateX(-200px); 
-       
     }
-
     100% {transform:translateX(0px)
-           
-        }
-    
-
-
-
+    }
 }
 .descriptionVisible{
     text-align:center;
     padding:2px; 
     position: relative;
     left:10%;
-
-     height:80px;
-            border-radius:5px;
-            border:1px solid black;
-            overflow:auto;  
-
+    height:80px;
+    border-radius:5px;
+    border:1px solid black;
+    overflow:auto;  
     animation:sborder .5s forwards;
     transform-origin: left;
-    
-   
-    
-
-}
+    }
 div::-webkit-scrollbar {
     display: none;
-  }
+   }
 .linkText:hover{
     background-color:rgb(182, 182, 182);
     border-radius: 3px;
-}
+    }
 .linkText{
     color:black;
     font-weight: bold;
     margin:1px;
-}
+    }
 .row{
     display:flex;
     flex-direction: row;
-
-    
-}
+    }
 p{
     text-align: center;
     position:relative;
     bottom:5px;
-    /* padding:1px;
-    margin-top:1px; */
-}
+    }
 
 p::-webkit-scrollbar {
     display: none;
   }
-
 .githubLink{
 align-self: center;
 color:black;
@@ -174,18 +131,14 @@ bottom:5px;
 width:30%;
 margin:auto;
 }
-  
 .githubLink:hover{
     background-color:rgb(182, 182, 182);
     border-radius: 3px;
 }
   @media only screen and (max-width: 480px){
-
-    
     .rowContainer{float:left;margin:2px;
         align-self: center;
     }
-  
     .deployed{
         height:50px;
         width:50px;
@@ -196,9 +149,6 @@ margin:auto;
         left:40px;
         margin:10px;
         z-index: -1 ;
-
-    
-    
     }
     .rest{
         height:50px;
@@ -240,25 +190,13 @@ margin:auto;
         position:absolute;
         top:50%;
         left:2.5%;
-        
-    
-         height:100px;
-         width:95%;
-         align-self: center;
-                border-radius:3px;
-                border:1px solid black;
-                overflow:auto;  
-    
+        height:100px;
+        width:95%;
+        align-self: center;
+        border-radius:3px;
+        border:1px solid black;
+        overflow:auto;  
         animation:sborder .5s forwards;
         transform-origin: left;
-        
-    }
-    /* .totalContainer{
-        display: inline;
-        align-content: center;
-    } */
-    
- 
-
-
-  }
+       }
+ }

@@ -4,70 +4,56 @@ import moviemagic from "./moviemagic.png";
 import burger from "./burger.png";
 import meshicon from "./meshicon.png";
 import lingoicon from "./lingolabslogo.PNG"
-
 import "./Style.css"
+
 //makes the icon work
 const PortfolioPage = function(){
     const[iconAction, setIconAction]=useState(
-        {one:"rest",
+        {
+        one:"rest",
         two:"rest",
         three:"rest",
         four:"rest"
-
-    }
+        }
     )
-    //make image background appear
-    const[imageState, setImageState]=useState(
-        {one:"imageInvisible",
+//make image background appear
+const[imageState, setImageState]=useState(
+        {
+        one:"imageInvisible",
         two:"imageInvisible",
         three:"imageInvisible",
-        four:"imageInvisible",}
+        four:"imageInvisible",
+        }
     )
-    // sets the description of the webpage and pops it ro the right
-    const[descriptionState, setDescriptionState]=useState(
-        {one:"descriptionInvisible",
+// sets the description of the webpage and pops it ro the right
+const[descriptionState, setDescriptionState]=useState(
+        {
+        one:"descriptionInvisible",
         two:"descriptionInvisible",
         three:"descriptionInvisible",
-        four:"descriptionInvisible",}
+        four:"descriptionInvisible",
+        }
     )
-    const handleClick = function(event){
+//triggers the animation for all of the information for each of the projects
+const handleClick = function(event){
         event.preventDefault();
         event.stopPropagation();
         var name=event.target.getAttribute("name");
-        console.log(name);
-        setIconAction({...iconAction,one:"rest",two:"rest",three:"rest",four:"rest", [name]:"deployed"}
-
-        
+         //push the div clicked on forward
+        setIconAction(
+            {...iconAction,one:"rest",two:"rest",three:"rest",four:"rest", [name]:"deployed"}
         );
+        //make the icon in the div appear for the one clicked on
         setImageState({...imageState,one:"imageInvisible",two:"imageInvisible",three:"imageInvisible",four:"imageInvisible ",[name]:"image"+name})
-
+        
+        //make the description appear
         setTimeout(()=>{
             setDescriptionState({...descriptionState,one:"descriptionInvisible",two:"descriptionInvisible",three:"descriptionInvisible",four:"descriptionInvisible", [name]:"descriptionVisible"})
         },100)
 
         
     }
-//     useEffect(
-//         function(){
-        
-            
-//         setTimeout(() => {
-//             setIconAction({...iconAction, one:"jumpUp"})
-//       },0)
-//       setTimeout(() => {
-//           setIconAction({...iconAction, one:"jumpUp",two:"jumpUp"})
-//     },100)
-//     setTimeout(() => {
-//       setIconAction({...iconAction, one:"jumpUp",two:"jumpUp",three:"jumpUp"})
-// },150)
-// setTimeout(() => {
-//   setIconAction({...iconAction, one:"jumpUp",two:"jumpUp",three:"jumpUp",four:"jumpUp"})
-// },200)
-        
-        
-//    } ,[]
-//     )
-    
+
 
 return(
     <div className="totalContainer">
@@ -99,7 +85,6 @@ return(
             </ div>
         </div>
 
-
         <div className="rowContainer">
         <div name="three" className={iconAction.three} onClick={handleClick}>
         <div className={imageState.three}></div>
@@ -115,7 +100,6 @@ return(
                 </div>
         </div>
 
-
         <div className="rowContainer">
         <div name="four" className={iconAction.four} onClick={handleClick}>
         <div className={imageState.four}></div>
@@ -127,27 +111,10 @@ return(
                 <a  href="https://github.com/ShawnWhy/LingoLabs">
                 <p className = "githubLink">github</p> 
                 </a>
-
-                <p>a full MERN web application designed to let customers purchase and download custom websites</p>
+                 <p>a full MERN web application designed to let customers purchase and download custom websites</p>
                 </div>
         </div>
         
-        
-
-
-
-
-
     </div>
-
-
-
-
-
-)
-
-
-
-}
-
+)}
 export default PortfolioPage;
