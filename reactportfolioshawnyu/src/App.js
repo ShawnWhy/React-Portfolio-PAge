@@ -4,6 +4,7 @@ import HomePage from "./pages/homepage";
 import PortfolioPage from "./pages/portfoliopage";
 import ContactPage from "./pages/contactpage"
 import Style from "./App.css"
+
 function App() {
   const[button, setButton]=useState(
     {one:"invisible",
