@@ -140,7 +140,7 @@ function activateInfo(){
       <img className = {"profileImage "+(imageDisplay==="invisible"? 'sleep':'activate' )}src={selfportrait} alt="portrait"></img>
           </div>
           <div className = {(informationDisplay==="invisible"?"sleep ":"activate bio "+frame )}>
-          <p>Shawn Yu is a full-stack developer from the east coast of the United States, he is a former commercial artist and university art teacher; he likes to read and listen to  audiobooks</p>
+          <p>Shawn Yu is a full-stack developer from the east coast of the United States. He is a former commercial artist and university art teacher; he likes to read and listen to  audiobooks</p>
           </div>
           </div>
           <div className={bar.one}></div>
