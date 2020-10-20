@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Switch,  } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch,   } from "react-router-dom";
+import {HashRouter}from "react-router-dom";
 import HomePage from "./pages/homepage";
 import PortfolioPage from "./pages/portfoliopage";
 import ContactPage from "./pages/contactpage"
@@ -33,7 +34,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <HashRouter>
       <div>
       <div className = "jumbotron">
       <div className={"drop " + dropDowncolor} onClick={seeLinks}>
@@ -63,7 +64,7 @@ function App() {
         <div className="footer">@ 2020 copyright: Shawn Yu</div>
       
       </div>
-     </Router>
+     </HashRouter>
   );
 }
 
