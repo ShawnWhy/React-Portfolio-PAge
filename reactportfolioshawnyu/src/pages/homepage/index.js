@@ -16,6 +16,8 @@ import resume from "./resume.pdf"
 
 const HomePage =()=>{
 
+  
+
 //the text under different link and skillset
 const [display, SetDisplay]=useState(
     ""
@@ -93,7 +95,7 @@ const handleHover=function(event){
     setTimeout(() => {
         SetDisplay("")
         
-    }, 500);
+    }, 2000);
 }
 
 //activates the animation that shows all of the 

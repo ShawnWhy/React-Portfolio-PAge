@@ -62,9 +62,9 @@ return(
             <div className={imageState.one}></div>
         </div>
         <div className={ descriptionState.one }>
-            <a href="https://howarddaniels.github.io/the-daily-mesh/news.html">
-                <p className="linkText">The Daily Mesh</p></a>
-                <a  href="https://github.com/HowardDaniels/the-daily-mesh">
+            <a href="http://leonorasgamingroom.herokuapp.com/">
+                <p className="linkText">Lady Leonora's Opposite Poetry Room</p></a>
+                <a  href="https://github.com/ShawnWhy/Lady-Leonoras-Game-Table-two">
                 <p className = "githubLink">github</p> 
                 </a>
             <p>a website featuring news, stocks and weatherupdates, created with axios and moments.js</p>
@@ -105,10 +105,10 @@ return(
         <div className={imageState.four}></div>
         </div>
         <div className={ descriptionState.four}>
-            <a href="https://shawnyulingolabsmaster.herokuapp.com/">
+            <a href="https://ghazalpoetryroom.herokuapp.com/">
                 <p className="linkText">Lingo Labs</p>
                 </a>
-                <a  href="https://github.com/ShawnWhy/LingoLabs">
+                <a  href="https://github.com/ShawnWhy/Ghazal_Poetry_Room">
                 <p className = "githubLink">github</p> 
                 </a>
                  <p>a full MERN web application designed to let customers purchase and download custom websites</p>
