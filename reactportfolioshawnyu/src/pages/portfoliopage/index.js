@@ -67,7 +67,7 @@ return(
                 <a  href="https://github.com/ShawnWhy/Lady-Leonoras-Game-Table-two">
                 <p className = "githubLink">github</p> 
                 </a>
-            <p>a website featuring news, stocks and weatherupdates, created with axios and moments.js</p>
+            <p>a collaborative poetry creation app created to assist in a university poetry class; created with React.js and Socket.io</p>
             </div>
         </div>
 
@@ -106,12 +106,12 @@ return(
         </div>
         <div className={ descriptionState.four}>
             <a href="https://ghazalpoetryroom.herokuapp.com/">
-                <p className="linkText">Lingo Labs</p>
+                <p className="linkText">Ghazal Poetry Room</p>
                 </a>
                 <a  href="https://github.com/ShawnWhy/Ghazal_Poetry_Room">
                 <p className = "githubLink">github</p> 
                 </a>
-                 <p>a full MERN web application designed to let customers purchase and download custom websites</p>
+                 <p>a collaborative poetry creation app created to assist in a university poetry class; created with React.js and Socket.io</p>
                 </div>
         </div>
         
