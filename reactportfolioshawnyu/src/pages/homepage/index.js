@@ -5,7 +5,7 @@ import CVlogo from "./SVG/resume.svg"
 import linkednlogo from "./SVG/linkedin.svg"
 import handlebarIcon from "./SVG/handlebars.svg";
 import expressIcon from "./SVG/express.svg";
-import html6Icon from "./SVG/html6.svg";
+// import html6Icon from "./SVG/html6.svg";
 import javascriptIcon from "./SVG/javascript.svg";
 import mongodbIcon from "./SVG/mongodb.svg";
 import nodeJsBlackIcon from "./SVG/nodejsblack.svg";
@@ -148,13 +148,13 @@ function activateInfo(){
           <div className={bar.one}></div>
           <div className="profileLinks row" >
               <div  className={"linkpic "+(linkDisplay.one==="invisible"? "sleep":"activate")}>
-              <a href={resume} download><img name="download resume" src={CVlogo} onMouseOver={handleHover}></img></a>
+              <a href={resume} download><img name="download resume" src={CVlogo} onMouseOver={handleHover} alt="resumeicon"></img></a>
               </div>
               <div className={"linkpic "+(linkDisplay.two==="invisible"? "sleep":"activate")}   >
               <a href="https://github.com/ShawnWhy" ><img name="github account"  src={Gitlogo} alt="git logo" onMouseOver={handleHover}></img></a>
               </div>
               <div className={"linkpic "+(linkDisplay.three==="invisible"? "sleep":"activate")} onMouseOver={handleHover}>
-              <a href="https://www.linkedin.com/in/shawn-yu-4377b411/"><img   name="linkedin account"  src={linkednlogo} alt={"linkedin logo"} onMouseOver={handleHover}></img></a>
+              <a href="https://www.linkedin.com/in/shawn-yu-4377b411/"><img   name="linkedin account"  src={linkednlogo} alt="linkedin logo" onMouseOver={handleHover}></img></a>
               </div>
          </div>
             <div className={bar.two}></div>
@@ -165,7 +165,7 @@ function activateInfo(){
                  <div key={skill.name}className="skillIcon">
                      <img  name= {skill.name}  
                      src={skill.icon} 
-                     onMouseOver={handleHover}>         
+                     onMouseOver={handleHover} alt="skillicons">         
                      </img>
                 </div>
                );

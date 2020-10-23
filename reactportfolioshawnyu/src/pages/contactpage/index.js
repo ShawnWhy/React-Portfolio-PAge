@@ -80,7 +80,7 @@ const setEmailMessage = function(){
 <input className="emailInput" type="email" name="email" placeholder="email" onChange={handleChange}></input>
 <textarea name="message" onChange={handleChange} placeholder="message"></textarea>
 <input onClick={handleSubmit} type="submit"></input>
-<a className="mail"  href="mailto:shawnyudesign@gmail.com"><img src={mailicon} onMouseOver={setEmailMessage}></img></a>
+<a className="mail"  href="mailto:shawnyudesign@gmail.com"><img src={mailicon} onMouseOver={setEmailMessage} alt="mail"></img></a>
 
 <div className="alert">{alert}</div>
 </form>

@@ -16,7 +16,8 @@
     "axios": "^0.19.2",
     "express": "^4.17.1",
     "mongoose": "^5.9.12",
-    "passport": "^0.4.1"
+    "passport": "^0.4.1",
+    "react": "^16.14.0"
   },
   "devDependencies": {},
   "repository": {
@@ -26,5 +27,5 @@
   "bugs": {
     "url": "https://github.com/ShawnWhy/React-Portfolio-PAge/issues"
   },
-  "homepage": "https://mernportfolioshawnyu.herokuapp.com/"
+  "homepage": "/"
 }

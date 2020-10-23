@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.245d4ad0.chunk.css",
-    "main.js": "/static/js/main.d524805b.chunk.js",
-    "main.js.map": "/static/js/main.d524805b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9a24fff7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9a24fff7.js.map",
-    "static/js/2.925922ae.chunk.js": "/static/js/2.925922ae.chunk.js",
-    "static/js/2.925922ae.chunk.js.map": "/static/js/2.925922ae.chunk.js.map",
+    "main.css": "/static/css/main.82d4b829.chunk.css",
+    "main.js": "/static/js/main.68024df5.chunk.js",
+    "main.js.map": "/static/js/main.68024df5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a14c21bb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a14c21bb.js.map",
+    "static/js/2.214bb316.chunk.js": "/static/js/2.214bb316.chunk.js",
+    "static/js/2.214bb316.chunk.js.map": "/static/js/2.214bb316.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d2b4be4bf6c01c339653eefa200eca64.js": "/precache-manifest.d2b4be4bf6c01c339653eefa200eca64.js",
+    "precache-manifest.1c54921d4ab3e6767b0a49fe06e96caf.js": "/precache-manifest.1c54921d4ab3e6767b0a49fe06e96caf.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.245d4ad0.chunk.css.map": "/static/css/main.245d4ad0.chunk.css.map",
-    "static/js/2.925922ae.chunk.js.LICENSE.txt": "/static/js/2.925922ae.chunk.js.LICENSE.txt",
+    "static/css/main.82d4b829.chunk.css.map": "/static/css/main.82d4b829.chunk.css.map",
+    "static/js/2.214bb316.chunk.js.LICENSE.txt": "/static/js/2.214bb316.chunk.js.LICENSE.txt",
     "static/media/express.svg": "/static/media/express.00abdb0d.svg",
     "static/media/Style.css": "/static/media/moviemagic.29d11fab.png",
     "static/media/github.svg": "/static/media/github.a752d7c7.svg",
     "static/media/handlebars.svg": "/static/media/handlebars.28be8786.svg",
-    "static/media/html6.svg": "/static/media/html6.61a5fdf9.svg",
     "static/media/javascript.svg": "/static/media/javascript.82c6ca48.svg",
-    "static/media/lingolabslogo.PNG": "/static/media/lingolabslogo.fb1fded1.PNG",
     "static/media/linkedin.svg": "/static/media/linkedin.aec2f895.svg",
     "static/media/mailicon.svg": "/static/media/mailicon.51f1af1a.svg",
     "static/media/mongodb.svg": "/static/media/mongodb.44625688.svg",
@@ -29,9 +27,9 @@
     "static/media/selfportrait.jpg": "/static/media/selfportrait.00f79a8a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9a24fff7.js",
-    "static/js/2.925922ae.chunk.js",
-    "static/css/main.245d4ad0.chunk.css",
-    "static/js/main.d524805b.chunk.js"
+    "static/js/runtime-main.a14c21bb.js",
+    "static/js/2.214bb316.chunk.js",
+    "static/css/main.82d4b829.chunk.css",
+    "static/js/main.68024df5.chunk.js"
   ]
 }

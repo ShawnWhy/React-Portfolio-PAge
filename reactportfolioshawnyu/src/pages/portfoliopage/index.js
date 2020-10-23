@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import weathericon from "./weathericon.png";
-import moviemagic from "./moviemagic.png";
-import burger from "./burger.png";
-import meshicon from "./meshicon.png";
-import lingoicon from "./lingolabslogo.PNG"
+// import weathericon from "./weathericon.png";
+// import moviemagic from "./moviemagic.png";
+// import burger from "./burger.png";
+// import meshicon from "./meshicon.png";
+// import lingoicon from "./lingolabslogo.PNG"
 import "./Style.css"
 
 //makes the icon work

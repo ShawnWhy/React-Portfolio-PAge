@@ -87,7 +87,7 @@ p{
 .visibleFrame{
     border:1px solid black;
     border-radius:10px;
-    animation:visibleFrame 1s forwards
+    animation:visibleFrame 1s both
     }
 .emptyframe{
     visibility: hidden;
@@ -111,7 +111,7 @@ p{
     position:relative;
     left:10%;
     margin:10px;
-    animation:bio 1s forwards;
+    animation:bio 1s both;
     text-align:center;
     padding:5px;
     }
@@ -131,7 +131,7 @@ p{
 }
 .bar{
     background-color:black;
-    animation:bar 1s forwards
+    animation:bar 1s both
 }
 
 .profileLinks{
@@ -145,7 +145,11 @@ p{
 }
 .profileContainer{
     display:flex;
+    overflow: hidden;
 }
+.profileContainer::-webkit-scrollbar {
+    display: none;
+  }
 .skillIcon{
     width:30px;
     height:30px;
@@ -168,7 +172,7 @@ p{
     justify-content: space-evenly;
     margin:5px auto;
     padding:2px;  
-    animation:visibleSkills 1s forwards;
+    animation:visibleSkills 1s both;
     transform-origin: right; 
 }
 
